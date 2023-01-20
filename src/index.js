@@ -5,12 +5,7 @@ const Tasks = [
     description: 'wash the dishes',
     completed: true,
     index: 0,
-  },
-  {
-    description: 'complete To Do list project',
-    completed: true,
-    index: 1,
-  },
+  }
 ];
 
 const listSection = document.querySelector('.todo-list');

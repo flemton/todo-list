@@ -31,10 +31,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [todo list](https://flemton.github.io/todo-list/) <a name="about-project"></a>
+# 📖 [todo list](https://flemton.github.io/todo-list/dist) <a name="about-project"></a>
 
-**[Todo list](https://flemton.github.io/todo-list/)** is a web tool used to add tasks you wanna do and mark ones completed as completed and delete one or all selected tasks
-**[Click here](https://flemton.github.io/todo-list/) for a [live](https://flemton.github.io/todo-list/) version to [todo list](https://flemton.github.io/todo-list/)**
+**[Todo list](https://flemton.github.io/todo-list/dist)** is a web tool used to add tasks you wanna do and mark ones completed as completed and delete one or all selected tasks
+**[Click here](https://flemton.github.io/todo-list/dist) for a [live](https://flemton.github.io/todo-list/dist) version to [todo list](https://flemton.github.io/todo-list/dist)**
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML, CSS and JAVASCRIPT
@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://flemton.github.io/todo-list/)
+- [Live Demo Link](https://flemton.github.io/todo-list/dist)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
