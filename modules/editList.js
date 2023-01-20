@@ -9,7 +9,7 @@ export default function editLists() {
   editForm.forEach((e) => {
     e.addEventListener('focusout', (e) => {
       const restoredListData = JSON.parse(localStorage.getItem('todo-list'));
-      restoredListData[e.target.getAttribute('index') - 1].content = e.target.value;
+      restoredListData[e.target.getAttribute('index') - 1].description = e.target.value;
       localStorage.setItem('todo-list', JSON.stringify(restoredListData));
       showLists();
     });

@@ -9,7 +9,7 @@ export default class AddList {
 export function indexter() {
   const restoredListData = JSON.parse(localStorage.getItem('todo-list'));
   function setIndex(item, index) {
-    item.indexNumber = index + 1;
+    item.index = index + 1;
   }
   restoredListData.forEach(setIndex);
 

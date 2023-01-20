@@ -10,7 +10,7 @@ export default function showLists() {
   let status = '';
   listSection.innerHTML = '';
   storedListData.forEach((Task) => {
-    if (Task.complete === true) {
+    if (Task.completed === true) {
       status = 'checked';
     } else {
       status = '';
