@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="index.js" defer type="module"></script>
     <title>Todo List</title>
 </head>
 
@@ -15,14 +16,14 @@
             <i class="fa-sharp fa-solid fa-rotate"></i>
         </span>
         <hr>
-        <span class="add-list">
-            <input type="text" placeholder="Add to your list...">
+        <form class="add-list">
+            <input type="text" placeholder="Add to your list..." id="add-list">
             <i class="fa-sharp fa-turn-down-left"></i>
-        </span>
+        </form>
         <hr>
         <ul class="todo-list">
         </ul>
-        <button>Clear all completed</button>
+        <button id="clear-all">Clear all completed</button>
     </section>
 </body>
 

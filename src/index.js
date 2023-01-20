@@ -1,27 +1,16 @@
 import './style.css';
+import showLists from '../modules/showLists.js';
+import recordList from '../modules/recordLists.js';
+import clearAll from '../modules/clearAll.js';
 
-const Tasks = [
-  {
-    description: 'wash the dishes',
-    completed: true,
-    index: 0,
-  },
-  {
-    description: 'complete To Do list project',
-    completed: true,
-    index: 1,
-  },
-];
+if (!JSON.parse(localStorage.getItem('todo-list'))) {
+  localStorage.setItem('todo-list', JSON.stringify([]));
+}
+showLists();
 
-const listSection = document.querySelector('.todo-list');
+const listForm = document.querySelector('.add-list');
 
-Tasks.forEach((Task) => {
-  const task = `
-    <li id="${Task.index}" class="${Task.completed}">
-    <input class="to-do-input" type="checkbox">
-    <p>${Task.description}</p>
-    <i class="fa-solid fa-ellipsis-vertical"></i>
-    </li>
-    <hr>`;
-  listSection.innerHTML += task;
-});
+listForm.addEventListener('submit', recordList);
+
+const clearBtn = document.querySelector('#clear-all');
+clearBtn.addEventListener('submit', clearAll);
