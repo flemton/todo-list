@@ -14,9 +14,10 @@ export default function showLists() {
       status = '';
     }
     listSection.innerHTML += `
-    <li id="${Task.index}" class="${Task.completed}">
-    <input class="to-do-input" type="checkbox">
-    <p>${Task.description}</p>
+    <li class="${Task.completed}">
+    <input class="to-do-input" type="checkbox" id="${Task.index}" ${status}>
+    <input class="strikethrough editable-input" index="${Task.index}" type="text" value="${Task.description}">
+    <i class="fa-solid fa-trash trash" index="${Task.index}"></i>
     <i class="fa-solid fa-ellipsis-vertical"></i>
     </li>
     <hr>`;
