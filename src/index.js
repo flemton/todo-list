@@ -13,4 +13,4 @@ const listForm = document.querySelector('.add-list');
 listForm.addEventListener('submit', recordList);
 
 const clearBtn = document.querySelector('#clear-all');
-clearBtn.addEventListener('submit', clearAll);
+clearBtn.addEventListener('click', clearAll);
