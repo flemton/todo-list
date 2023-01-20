@@ -1,4 +1,4 @@
-import { indexter } from './AddList.js';
+import { indexter } from './addList.js';
 import showLists from './showLists.js';
 
 export default function clearAll(e) {

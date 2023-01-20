@@ -1,5 +1,4 @@
-import AddList from './AddList.js';
-import { indexter } from './AddList.js';
+import AddList, { indexter } from './addList.js';
 import showLists from './showLists.js';
 
 const listInput = document.querySelector('#add-list');

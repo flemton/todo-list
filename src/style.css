@@ -55,9 +55,11 @@ i {
   padding-right: 32px;
 }
 
-.trash:hover, i:hover {
+.trash:hover,
+i:hover {
   color: orange;
 }
+
 .trash:active {
   color: red;
 }
@@ -101,4 +103,16 @@ hr {
   opacity: 0.5;
   color: black;
   border: none;
+}
+
+#clear-all:hover {
+  color: orange;
+}
+
+input[type="checkbox"]:checked + input.strikethrough {
+  text-decoration: line-through;
+}
+
+#clear-all:active {
+  color: red;
 }

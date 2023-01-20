@@ -1,5 +1,7 @@
-import completed from "./completed";
-import editLists from "./editList";
+/* eslint-disable  import/no-cycle */
+
+import completed from './completed.js';
+import editLists from './editList.js';
 
 const listSection = document.querySelector('.todo-list');
 

@@ -1,7 +1,7 @@
 import './style.css';
-import showLists from '../modules/showLists';
-import recordList from '../modules/recordLists';
-import clearAll from '../modules/clearAll';
+import showLists from '../modules/showLists.js';
+import recordList from '../modules/recordLists.js';
+import clearAll from '../modules/clearAll.js';
 
 if (!JSON.parse(localStorage.getItem('todo-list'))) {
   localStorage.setItem('todo-list', JSON.stringify([]));
