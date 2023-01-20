@@ -5,3 +5,13 @@ export default class AddList {
       this.index = 1;
     }
   }
+
+  export function indexter() {
+    const restoredListData = JSON.parse(localStorage.getItem('todo-list'));
+    function setIndex(item, index) {
+      item.indexNumber = index + 1;
+    }
+    restoredListData.forEach(setIndex);
+  
+    localStorage.setItem('todo-list', JSON.stringify(restoredListData));
+  }

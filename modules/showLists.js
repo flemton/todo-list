@@ -1,7 +1,10 @@
+import completed from "./completed";
+import editLists from "./editList";
+
 const listSection = document.querySelector('.todo-list');
 
 export default function showLists() {
-  const storedListData = JSON.parse(localStorage.getItem('todo-list'));
+  const storedListData = JSON.parse(localStorage.getItem('todo-list')) || [];
   let status = '';
   listSection.innerHTML = '';
   storedListData.forEach((Task) => {
@@ -18,6 +21,6 @@ export default function showLists() {
     </li>
     <hr>`;
   });
-  inputChecker();
-  edit();
+  completed();
+  editLists();
 }
