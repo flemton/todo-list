@@ -1,11 +1,13 @@
 body {
-  display: flex;
   align-content: center;
   color: grey;
 }
 
-.todo {
+.flexbox {
   display: flex;
+}
+
+.todo {
   flex-direction: column;
   justify-content: space-evenly;
   margin: 50px auto;
@@ -29,7 +31,6 @@ ul {
 }
 
 .todo li {
-  display: flex;
   align-items: center;
   list-style: none;
   font-size: 20px;
@@ -39,7 +40,6 @@ ul {
 }
 
 .todo-title {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 97%;
